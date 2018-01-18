@@ -60,8 +60,8 @@ public abstract class BaseServiceImpl<T> implements BaseService<T> {
 	/*public String batchDelete(Object ids[]) {
         try {
 			for (int i = 0; i < ids.length; i++) {
-				delete(Long.valueOf((String) ids[i]));// TODO
-														// 转LONG，不知道其他地方会不会有问题
+				delete(ids[i]));
+														
 			}
 		} catch (Exception e) {
 			logger.error("---batch error---", e);
